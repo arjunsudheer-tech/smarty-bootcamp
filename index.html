@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Navbar Section -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Smarty Bootcamp</a>
 
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">What You'll Learn</a>
+            <a href="#learn" class="nav-link">What You'll Learn</a>
           </li>
           <li class="nav-item">
             <a href="#questions" class="nav-link">Questions</a>
@@ -70,9 +70,9 @@
      <!-- Boxes -->
       <section class="p-5">
         <div class="container">
-          <div class="row">
+          <div class="row text-center g-4">
             <div class="col-md">
-              <div class="card bg-dark text-light mb-3">
+              <div class="card bg-dark text-light">
                 <div class="card-body text-center">
                   <div class="h1">
                     <i class="bi bi-laptop"></i>
@@ -81,7 +81,7 @@
                   <p class="card-text">
                     Learn live online from anywhere with interactive sessions and recorded classes.
                   </p>
-                  <a href="#" class="btn btn-secondary">Read More</a>
+                  <a href="#" class="btn btn-primary">Read More</a>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
                   <p class="card-text">
                     Attend classroom sessions, collaborate with peers and receive hands on instructor guidance.
                   </p>
-                  <a href="#" class="btn btn-secondary">Read More</a>
+                  <a href="#" class="btn btn-primary">Read More</a>
                 </div>
               </div>
             </div>
@@ -111,13 +111,133 @@
                   <p class="card-text">
                     Combine online flexibility with in person workshops for the best learning experience.
                   </p>
-                  <a href="#" class="btn btn-secondary">Read More</a>
+                  <a href="#" class="btn btn-primary">Read More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Learn Section -->
+       <section id="learn" class="p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <img class="img-fluid" src="images/fundamentals.svg" alt="fundamentals-image">
+            </div>
+            <div class="col-md p-5">
+              <h2>Learn The Fundamentals</h2>
+              <p class="lead">
+                Build a strong foundation in web development by learning essential technologies, programming concepts, and industry best practices that prepare you for modern software development.
+              </p>
+              <p>
+                Master HTML, CSS, Bootstrap, JavaScript, Git, responsive design, debugging, and problem-solving through hands-on projects and practical exercises. Develop the confidence to create professional web applications and build the skills needed for full-stack and AI-integrated development.
+              </p>
+              <a href="" class="btn btn-light mt-3">
+                <i class="bi bi-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <section id="learn" class="p-5 bg-secondary text-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md p-5">
+              <h2>Learn The Fundamentals</h2>
+              <p class="lead">
+                Learn React.js to build fast, interactive, and reusable user interfaces that power modern web applications with a component-based development approach.
+              </p>
+              <p>
+                Understand components, props, state, hooks, routing, and API integration while building real-world projects. Learn to create scalable, responsive applications using React's modern development practices and efficiently manage dynamic user interfaces with confidence.
+              </p>
+              <a href="" class="btn btn-dark mt-3">
+                <i class="bi bi-chevron-right"></i>
+                Read More
+              </a>
+            </div>
+            <div class="col-md">
+              <img class="img-fluid" src="images/react.svg" alt="react-image">
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- Question Accordion -->
+        <section id="#questions" class="p-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                    What is Smarty Bootcamp ?
+                  </button>
+                </h2>
+                <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    The Smarty Bootcamp is Trivandrum's first coding bootcamp that focuses on teaching the most in-demand tech skills, helping students and professionals become job-ready in a few months.
+                  </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    What programs do you offer?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    We offer bootcamps in Full-stack Web Development, Full-stack Mobile Development, Data Analysis and Machine Learning, UI/UX Design, and a comprehensive CS Web Engineering track.
+                  </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    Do I need prior coding experience?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    No! Our Pre-Bootcamp program is designed to help complete beginners get started and prepare for the main bootcamps.
+                  </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    What is the duration of the programs?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Our programs range from 6 weeks (Pre-Bootcamp) to 18 weeks (Full-stack Web or Mobile) to 12 months (CS Web Engineering).
+                  </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    Do you provide job placement assistance?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Yes, we have a 97% employment rate and provide portfolio building, resume support, mock interviews, and connect students with top companies.
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
